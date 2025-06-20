@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-/meu=app
+/meu-app
 
 # production
 /build

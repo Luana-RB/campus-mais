@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DesempenhoAcademico from "./DesempenhoAcademico";
+import axios from "axios";
 
 const DesempenhoController = () => {
   const [dados, setDados] = useState([]);

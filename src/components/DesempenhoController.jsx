@@ -1,19 +1,48 @@
 import React, { useEffect, useState } from "react";
 import DesempenhoAcademico from "./DesempenhoAcademico";
-import axios from "axios";
 
 const DesempenhoController = () => {
-  const [dados, setDados] = useState([]);
+const [dados, setDados] = useState([
+  {
+    codigo: "INF101",
+    disciplina: "Algoritmos e Lógica de Programação",
+    notaFinal: 8.7,
+    frequencia: 95,
+    status: "aprovado"
+  },
+  {
+    codigo: "MAT202",
+    disciplina: "Cálculo Diferencial e Integral",
+    notaFinal: 5.4,
+    frequencia: 78,
+    status: "reprovado"
+  },
+  {
+    codigo: "ENG303",
+    disciplina: "Inglês Técnico",
+    notaFinal: 9.2,
+    frequencia: 88,
+    status: "aprovado"
+  },
+  {
+    codigo: "SO204",
+    disciplina: "Sistemas Operacionais",
+    notaFinal: 6.3,
+    frequencia: 82,
+    status: "aprovado"
+  },
+  {
+    codigo: "BD301",
+    disciplina: "Banco de Dados I",
+    notaFinal: 4.8,
+    frequencia: 65,
+    status: "reprovado"
+  }
+]);
   const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
     const buscarDesempenho = () => {
-      setTimeout(() => {
-        axios.get("https://api.exemplo.com/desempenho").then((res) => {
-          setDados(res.data);
-          setCarregando(false);
-        });
-      });
     };
     buscarDesempenho();
   }, []);

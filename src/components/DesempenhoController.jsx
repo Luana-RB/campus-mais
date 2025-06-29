@@ -8,35 +8,35 @@ const [dados, setDados] = useState([
     disciplina: "Algoritmos e Lógica de Programação",
     notaFinal: 8.7,
     frequencia: 95,
-    status: "aprovado"
+    status: "Aprovado"
   },
   {
     codigo: "MAT202",
     disciplina: "Cálculo Diferencial e Integral",
     notaFinal: 5.4,
     frequencia: 78,
-    status: "reprovado"
+    status: "Reprovado"
   },
   {
     codigo: "ENG303",
     disciplina: "Inglês Técnico",
     notaFinal: 9.2,
     frequencia: 88,
-    status: "aprovado"
+    status: "Aprovado"
   },
   {
     codigo: "SO204",
     disciplina: "Sistemas Operacionais",
     notaFinal: 6.3,
     frequencia: 82,
-    status: "aprovado"
+    status: "Aprovado"
   },
   {
     codigo: "BD301",
     disciplina: "Banco de Dados I",
     notaFinal: 4.8,
     frequencia: 65,
-    status: "reprovado"
+    status: "Reprovado"
   }
 ]);
   const [carregando, setCarregando] = useState(true);

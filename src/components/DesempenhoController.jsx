@@ -43,7 +43,7 @@ const [dados, setDados] = useState([
 
   useEffect(() => {
     const buscarDesempenho = () => {
-    };
+    setCarregando(false); };
     buscarDesempenho();
   }, []);
 
